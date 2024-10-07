@@ -6,5 +6,5 @@ enhanced_turtlesim is for task 1 and lshape_navigation is for task 2.
 
 These two files can be found in /catkin_ws/src/.
 
-Furthur task 1 commands contain commands that I specifically used to create the packages and the three python files for keyboard functions, edge avoidance anjd for teleport services.
+Furthur task 1 commands contain commands that I specifically used to create the packages and the three python files for keyboard functions, edge avoidance and for teleport services.
 
