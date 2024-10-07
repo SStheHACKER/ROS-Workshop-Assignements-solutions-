@@ -1,0 +1,122 @@
+ss8983@ubuntu:~$ cd catkin_ws
+ss8983@ubuntu:~/catkin_ws$ ls
+build  devel  src
+ss8983@ubuntu:~/catkin_ws$ cd src
+ss8983@ubuntu:~/catkin_ws/src$ ls
+CMakeLists.txt  enhanced_turtlesim
+ss8983@ubuntu:~/catkin_ws/src$ cd enhanced_turtlesim
+ss8983@ubuntu:~/catkin_ws/src/enhanced_turtlesim$ ls
+CMakeLists.txt  package.xml  src
+ss8983@ubuntu:~/catkin_ws/src/enhanced_turtlesim$ cd src
+ss8983@ubuntu:~/catkin_ws/src/enhanced_turtlesim/src$ ls
+chmod              keyboard_control.py  teleport_service.py
+edge_avoidance.py  keyboard.py          +x
+ss8983@ubuntu:~/catkin_ws/src/enhanced_turtlesim/src$ rosrun enhanced_turtlesim keyboard_control.py
+[rospack] Error: package 'enhanced_turtlesim' not found
+ss8983@ubuntu:~/catkin_ws/src/enhanced_turtlesim/src$ rosrun turtlesim turtlesim_node
+[ INFO] [1728293262.128505956]: Starting turtlesim with node name /turtlesim
+[ INFO] [1728293262.136202625]: Spawning turtle [turtle1] at x=[5.544445], y=[5.544445], theta=[0.000000]
+osrun enhanced_turtlesim keyboard_control.py^[[D^[[D^[[D^[[D^[[D^[[D^[[D^[[D^[[D^[[D^[[D^[[D^[[D^[[D^Z
+[1]+  Stopped                 rosrun turtlesim turtlesim_node
+ss8983@ubuntu:~/catkin_ws/src/enhanced_turtlesim/src$ ^C
+ss8983@ubuntu:~/catkin_ws/src/enhanced_turtlesim/src$ rosrun enhanced_turtlesim keyboard_control.py
+[rospack] Error: package 'enhanced_turtlesim' not found
+ss8983@ubuntu:~/catkin_ws/src/enhanced_turtlesim/src$ rosrun turtlesim turtlesim_node
+[ INFO] [1728293338.583032536]: Starting turtlesim with node name /turtlesim
+[ INFO] [1728293338.586366485]: Spawning turtle [turtle1] at x=[5.544445], y=[5.544445], theta=[0.000000]
+rosrun enhanced_turtlesim edge_avoidance.py
+
+rosrun enhanced_turtlesim teleport_service.py
+
+[ WARN] [1728293474.981695426]: Oh no! I hit the wall! (Clamping from [x=11.092390, y=8.509294])
+[ WARN] [1728293474.997757259]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=8.523622])
+[ WARN] [1728293475.013725736]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=8.537951])
+[ WARN] [1728293475.029592635]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=8.552279])
+[ WARN] [1728293475.045460460]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=8.566607])
+[ WARN] [1728293475.061984445]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=8.580935])
+[ WARN] [1728293475.077914182]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=8.595264])
+[ WARN] [1728293475.094130946]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=8.609592])
+[ WARN] [1728293475.109803919]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=8.623920])
+[ WARN] [1728293475.125837507]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=8.638249])
+[ WARN] [1728293475.141563918]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=8.652577])
+[ WARN] [1728293475.157321380]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=8.666905])
+[ WARN] [1728293475.174120810]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=8.681233])
+[ WARN] [1728293475.189897085]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=8.695562])
+[ WARN] [1728293475.206164320]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=8.709890])
+[ WARN] [1728293475.221377569]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=8.724218])
+[ WARN] [1728293475.237404834]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=8.738547])
+[ WARN] [1728293475.254218423]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=8.752875])
+[ WARN] [1728293475.270154917]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=8.767203])
+[ WARN] [1728293475.286053346]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=8.781531])
+[ WARN] [1728293475.302054729]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=8.795860])
+[ WARN] [1728293475.318187551]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=8.810188])
+[ WARN] [1728293475.333911629]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=8.824516])
+[ WARN] [1728293475.349690973]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=8.838845])
+[ WARN] [1728293475.366535699]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=8.853173])
+[ WARN] [1728293475.381494161]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=8.867501])
+[ WARN] [1728293475.397792819]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=8.881829])
+[ WARN] [1728293475.413561366]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=8.896158])
+[ WARN] [1728293475.430508448]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=8.910486])
+[ WARN] [1728293475.445753906]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=8.924814])
+[ WARN] [1728293475.461857535]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=8.939142])
+[ WARN] [1728293475.477724345]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=8.953471])
+[ WARN] [1728293475.494131375]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=8.967799])
+[ WARN] [1728293475.509968182]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=8.982127])
+[ WARN] [1728293475.526363273]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=8.996456])
+[ WARN] [1728293475.542062217]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=9.010784])
+[ WARN] [1728293475.557912967]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=9.025112])
+[ WARN] [1728293475.573941488]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=9.039440])
+[ WARN] [1728293475.589983659]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=9.053769])
+[ WARN] [1728293475.605748062]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=9.068097])
+[ WARN] [1728293475.621656871]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=9.082425])
+[ WARN] [1728293475.637502694]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=9.096754])
+[ WARN] [1728293475.653429886]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=9.111082])
+[ WARN] [1728293475.670580555]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=9.125410])
+[ WARN] [1728293475.685937831]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=9.139738])
+[ WARN] [1728293475.702392668]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=9.154067])
+[ WARN] [1728293475.717475695]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=9.168395])
+[ WARN] [1728293475.733429587]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=9.182723])
+[ WARN] [1728293475.749425655]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=9.197052])
+[ WARN] [1728293475.765573079]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=9.211380])
+[ WARN] [1728293475.781463230]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=9.225708])
+[ WARN] [1728293475.798050775]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=9.240036])
+[ WARN] [1728293475.813756915]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=9.254365])
+[ WARN] [1728293475.829235595]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=9.268693])
+[ WARN] [1728293475.846386789]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=9.283021])
+[ WARN] [1728293475.862017702]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=9.297349])
+[ WARN] [1728293475.878070691]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=9.311678])
+[ WARN] [1728293475.893406642]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=9.326006])
+[ WARN] [1728293475.910723277]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=9.340334])
+[ WARN] [1728293475.926219286]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=9.354663])
+[ WARN] [1728293475.942020196]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=9.368991])
+[ WARN] [1728293475.958217487]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=9.383319])
+[ WARN] [1728293475.973273006]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=9.397647])
+[ WARN] [1728293475.990176461]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=9.411976])
+[ WARN] [1728293476.006392620]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=9.426304])
+[ WARN] [1728293476.021394254]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=9.440632])
+[ WARN] [1728293476.038010400]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=9.454961])
+[ WARN] [1728293476.053451541]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=9.469289])
+[ WARN] [1728293476.069464400]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=9.483617])
+[ WARN] [1728293476.086204274]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=9.497945])
+[ WARN] [1728293476.102257840]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=9.512274])
+[ WARN] [1728293476.118386517]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=9.526602])
+[ WARN] [1728293476.134184001]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=9.540930])
+[ WARN] [1728293476.150142703]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=9.555259])
+[ WARN] [1728293476.165935952]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=9.569587])
+[ WARN] [1728293476.181833634]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=9.583915])
+[ WARN] [1728293476.197809819]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=9.598243])
+[ WARN] [1728293476.213806125]: Oh no! I hit the wall! (Clamping from [x=11.096010, y=9.612572])
+[1]+  Killed                  rosrun turtlesim turtlesim_node
+ss8983@ubuntu:~/catkin_ws/src/enhanced_turtlesim/src$ rosrun enhanced_turtlesim edge_avoidance.py
+[rospack] Error: package 'enhanced_turtlesim' not found
+ss8983@ubuntu:~/catkin_ws/src/enhanced_turtlesim/src$ 
+ss8983@ubuntu:~/catkin_ws/src/enhanced_turtlesim/src$ rosrun enhanced_turtlesim teleport_service.py
+[rospack] Error: package 'enhanced_turtlesim' not found
+ss8983@ubuntu:~/catkin_ws/src/enhanced_turtlesim/src$ 
+ss8983@ubuntu:~/catkin_ws/src/enhanced_turtlesim/src$ rosrun enhanced_turtlesim teleport_service.py
+[rospack] Error: package 'enhanced_turtlesim' not found
+ss8983@ubuntu:~/catkin_ws/src/enhanced_turtlesim/src$ rosrun turtlesim turtlesim_node
+[ INFO] [1728293595.178876768]: Starting turtlesim with node name /turtlesim
+[ INFO] [1728293595.186642631]: Spawning turtle [turtle1] at x=[5.544445], y=[5.544445], theta=[0.000000]
+
+

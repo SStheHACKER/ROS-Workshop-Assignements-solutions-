@@ -1,0 +1,85 @@
+ss8983@ubuntu:~/catkin_ws/src$ catkin_create_pkg enhanced_turtlesim rospy std_msgs geometry_msgs turtlesim
+Created file enhanced_turtlesim/package.xml
+Created file enhanced_turtlesim/CMakeLists.txt
+Created folder enhanced_turtlesim/src
+Successfully created files in /home/ss8983/catkin_ws/src/enhanced_turtlesim. Please adjust the values in package.xml.
+ss8983@ubuntu:~/catkin_ws/src$ cd ~/catkin_ws
+ss8983@ubuntu:~/catkin_ws$ catkin_make
+Base path: /home/ss8983/catkin_ws
+Source space: /home/ss8983/catkin_ws/src
+Build space: /home/ss8983/catkin_ws/build
+Devel space: /home/ss8983/catkin_ws/devel
+Install space: /home/ss8983/catkin_ws/install
+####
+#### Running command: "cmake /home/ss8983/catkin_ws/src -DCATKIN_DEVEL_PREFIX=/home/ss8983/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/ss8983/catkin_ws/install -G Unix Makefiles" in "/home/ss8983/catkin_ws/build"
+####
+-- Using CATKIN_DEVEL_PREFIX: /home/ss8983/catkin_ws/devel
+-- Using CMAKE_PREFIX_PATH: /opt/ros/noetic
+-- This workspace overlays: /opt/ros/noetic
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using Debian Python package layout
+-- Using empy: /usr/lib/python3/dist-packages/em.py
+-- Using CATKIN_ENABLE_TESTING: ON
+-- Call enable_testing()
+-- Using CATKIN_TEST_RESULTS_DIR: /home/ss8983/catkin_ws/build/test_results
+-- Forcing gtest/gmock from source, though one was otherwise available.
+-- Found gtest sources under '/usr/src/googletest': gtests will be built
+-- Found gmock sources under '/usr/src/googletest': gmock will be built
+-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+-- Using Python nosetests: /usr/bin/nosetests3
+-- catkin 0.8.10
+-- BUILD_SHARED_LIBS is on
+-- BUILD_SHARED_LIBS is on
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- ~~  traversing 1 packages in topological order:
+-- ~~  - enhanced_turtlesim
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- +++ processing catkin package: 'enhanced_turtlesim'
+-- ==> add_subdirectory(enhanced_turtlesim)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/ss8983/catkin_ws/build
+####
+#### Running command: "make -j2 -l2" in "/home/ss8983/catkin_ws/build"
+####
+ss8983@ubuntu:~/catkin_ws$ source devel/setup.bash
+ss8983@ubuntu:~/catkin_ws$ cd ~/catkin_ws/src/enhanced_turtlesim/src
+ss8983@ubuntu:~/catkin_ws/src/enhanced_turtlesim/src$ touch keyboard.py chmod +x keyboard.py
+ss8983@ubuntu:~/catkin_ws/src/enhanced_turtlesim/src$ nano keyboard_control.py
+ss8983@ubuntu:~/catkin_ws/src/enhanced_turtlesim/src$ touch edge_avoidance.py
+ss8983@ubuntu:~/catkin_ws/src/enhanced_turtlesim/src$ chmod +x edge_avoidance.py
+ss8983@ubuntu:~/catkin_ws/src/enhanced_turtlesim/src$ nano edge_avoidance.py
+ss8983@ubuntu:~/catkin_ws/src/enhanced_turtlesim/src$ touch teleport_service.py
+ss8983@ubuntu:~/catkin_ws/src/enhanced_turtlesim/src$ chmod +x teleport_service.py
+ss8983@ubuntu:~/catkin_ws/src/enhanced_turtlesim/src$ nano teleport_service.py
+ss8983@ubuntu:~/catkin_ws/src/enhanced_turtlesim/src$ rosrun enhanced_turtlesim keyboard_control.py
+[rosrun] Couldn't find executable named keyboard_control.py below /home/ss8983/catkin_ws/src/enhanced_turtlesim
+[rosrun] Found the following, but they're either not files,
+[rosrun] or not executable:
+[rosrun]   /home/ss8983/catkin_ws/src/enhanced_turtlesim/src/keyboard_control.py
+ss8983@ubuntu:~/catkin_ws/src/enhanced_turtlesim/src$ rosrun enhanced_turtlesim keyboard_control.py
+[rosrun] Couldn't find executable named keyboard_control.py below /home/ss8983/catkin_ws/src/enhanced_turtlesim
+[rosrun] Found the following, but they're either not files,
+[rosrun] or not executable:
+[rosrun]   /home/ss8983/catkin_ws/src/enhanced_turtlesim/src/keyboard_control.py
+ss8983@ubuntu:~/catkin_ws/src/enhanced_turtlesim/src$ rosrun enhanced_turtlesim keyboard_control.py
+[rosrun] Couldn't find executable named keyboard_control.py below /home/ss8983/catkin_ws/src/enhanced_turtlesim
+[rosrun] Found the following, but they're either not files,
+[rosrun] or not executable:
+[rosrun]   /home/ss8983/catkin_ws/src/enhanced_turtlesim/src/keyboard_control.py
+ss8983@ubuntu:~/catkin_ws/src/enhanced_turtlesim/src$ rosrun enhanced_turtlesim key_control.py
+[rosrun] Couldn't find executable named key_control.py below /home/ss8983/catkin_ws/src/enhanced_turtlesim
+ss8983@ubuntu:~/catkin_ws/src/enhanced_turtlesim/src$ rosrun enhanced_turtlesim keyboard_control.py
+[rosrun] Couldn't find executable named keyboard_control.py below /home/ss8983/catkin_ws/src/enhanced_turtlesim
+[rosrun] Found the following, but they're either not files,
+[rosrun] or not executable:
+[rosrun]   /home/ss8983/catkin_ws/src/enhanced_turtlesim/src/keyboard_control.py
+ss8983@ubuntu:~/catkin_ws/src/enhanced_turtlesim/src$ ls
+chmod  edge_avoidance.py  keyboard_control.py  keyboard.py  teleport_service.py  +x
+ss8983@ubuntu:~/catkin_ws/src/enhanced_turtlesim/src$ touch keyboard_control.py
+ss8983@ubuntu:~/catkin_ws/src/enhanced_turtlesim/src$ chmod +x keyboard_control.py
+ss8983@ubuntu:~/catkin_ws/src/enhanced_turtlesim/src$ nano keyboard_control.py
+ss8983@ubuntu:~/catkin_ws/src/enhanced_turtlesim/src$ ls
+chmod  edge_avoidance.py  keyboard_control.py  keyboard.py  teleport_service.py  +x
+ss8983@ubuntu:~/catkin_ws/src/enhanced_turtlesim/src$ rosrun enhanced_turtlesim keyboard_control.py

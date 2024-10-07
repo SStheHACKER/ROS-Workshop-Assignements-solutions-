@@ -1,0 +1,39 @@
+ss8983@ubuntu:~$ sudo apt-get install ros-noetic-turtlesim
+[sudo] password for ss8983: 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+ros-noetic-turtlesim is already the newest version (0.10.2-1focal.20240913.185930).
+ros-noetic-turtlesim set to manually installed.
+The following package was automatically installed and is no longer required:
+  python3-rosdistro
+Use 'sudo apt autoremove' to remove it.
+0 upgraded, 0 newly installed, 0 to remove and 239 not upgraded.
+ss8983@ubuntu:~$ roscore
+... logging to /home/ss8983/.ros/log/5ba85ef2-848a-11ef-8748-5b67686d264f/roslaunch-ubuntu-28834.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+
+started roslaunch server http://ubuntu:37067/
+ros_comm version 1.17.0
+
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.17.0
+
+NODES
+
+auto-starting new master
+process[master]: started with pid [28842]
+ROS_MASTER_URI=http://ubuntu:11311/
+
+setting /run_id to 5ba85ef2-848a-11ef-8748-5b67686d264f
+process[rosout-1]: started with pid [28852]
+started core service [/rosout]
+
+
